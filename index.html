@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>خلوة شهر 11</title>
+  <meta name="description" content="خلوة شهر 11 — أعمال الرسل: خلوة يومية لطلاب المرحلة الإعدادية">
+  <meta name="theme-color" content="#7a1f17">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#app">تخطي إلى المحتوى</a>
+
+  <header class="top" id="top">
+    <div class="top-inner">
+      <button class="brand" id="brand" type="button" aria-label="الصفحة الرئيسية">
+        <span class="flame" aria-hidden="true">🔥</span>
+        <span class="brand-t">خلوة شهر 11</span>
+      </button>
+      <div class="top-info">
+        <span id="clock" class="pill" aria-live="off"></span>
+        <span id="status" class="pill pill-status" aria-live="polite"></span>
+        <button id="editProfile" class="link" type="button" hidden>تعديل بياناتي</button>
+      </div>
+    </div>
+    <div id="timeWarn" class="warn" role="status" hidden></div>
+  </header>
+
+  <nav class="cal" aria-label="أيام الخلوة" id="cal"></nav>
+
+  <main id="app" tabindex="-1">
+    <noscript><p class="card">محتاج تفعّل JavaScript علشان الخلوة تشتغل.</p></noscript>
+    <p class="loading"><span class="spin" aria-hidden="true"></span> جارٍ التحميل…</p>
+  </main>
+
+  <dialog id="review" aria-labelledby="reviewTitle">
+    <div class="dlg">
+      <h2 id="reviewTitle">راجع إجاباتك قبل الإرسال</h2>
+      <div id="reviewBody"></div>
+      <div class="dlg-actions">
+        <button class="btn btn-ghost" id="reviewBack" type="button">رجوع للتعديل</button>
+        <button class="btn" id="reviewSend" type="button">تأكيد وإرسال</button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="foot">
+    <p>بيانات الاسم والسنة الدراسية محفوظة على جهازك فقط علشان ما تكتبهاش كل مرة. لو غيّرت الجهاز أو المتصفح هتكتبها تاني.</p>
+  </footer>
+
+  <script src="schedule.js"></script>
+  <script src="retreat-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
